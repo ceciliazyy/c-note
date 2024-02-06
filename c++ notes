@@ -8,3 +8,87 @@ operators that must be methods of the class
     eg. coerce std:: istream into a bool
 
 Arrays of objects
+
+consider:
+  struct Vec {
+      int x,y:
+//no default ctor};
+
+struct vec2{
+  int xy;
+  vec2(int x = 0;, int y = 0"
+  x{x}, y{y} {}
+};
+
+Vec arr1[10]; // illegal-compile time error
+Vec2 arr2[10;] //ok
+vec * arr3[10] // ok, 10*(vec *)
+
+////not in wang's note
+Comparing objects
+eg.
+// compare 2 strings
+  string s1, s2
+  if(s1 =s2 {
+  }
+  else if (s1 < s2){
+  }
+  else{
+  }
+=> have to do 2 comparsions
+
+eg
+// in c
+int ret = strlen(s1,s2) // only need one comparison
+if(ret == 0){
+}
+else if (ret <0 ){
+}
+else {
+}
+
+-c++20 introduced operator <=> ("spaceship operator")
+=> import/include << compare >>
+eg
+  std:: strong_ordering res = s1 <=> s2;
+// defined to be able to compare res to 0;
+ie res  == 0 => same
+       <= 0
+        >= 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
