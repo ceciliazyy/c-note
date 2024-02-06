@@ -1,0 +1,10 @@
+=> don't make I\OL operators methods of the class
+operators that must be methods of the class
+  -operators (assignment)
+  operator[](indexing eg, std::string)
+  -operator-> (dereferencing)
+  -operator()(see function objects later)
+  -operatorT, where T is some type used fir type coercion"
+    eg. coerce std:: istream into a bool
+
+Arrays of objects
